@@ -13,7 +13,7 @@ En este proyecto se exploró el rol del MLOps Engineer, combinando habilidades d
 - Adquirir experiencia práctica en MLOps y aplicar estas habilidades a un caso de uso real.
 
 
-![Etapas MLOps](https://github.com/user-attachments/assets/cda629ec-503e-408e-a44f-12c93d52a3d3)
+![Gráfico de Etapas MLOps](https://github.com/user-attachments/assets/51e07376-726f-41e2-b7e3-fbb389ea36fb)
 
 ## - 1. Proceso EDA (Análisis Exploratorio de Datos)
 
