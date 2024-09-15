@@ -4,7 +4,7 @@ import pandas as pd
 import pyarrow.parquet as pq
 
 
-# Carga del dataset
+# Carga del dataset / Conjunto de Datos
 
 # Crear una lista para almacenar los DataFrames
 dfs = []
