@@ -10,7 +10,7 @@ import pyarrow.parquet as pq
 dfs = []
 
 # Iterar sobre los archivos Parquet y leerlos
-for archivo in ['DataSets/df_companies_limpio.parquet', 'DataSets/df_credits_limpio.parquet', 'DataSets/df_genres_limpio.parquet', 'DataSets/df_movies_limpio.parquet']:
+for archivo in ['DataSets_Clean\df_companies_limpio.parquet', 'DataSets_Clean\df_credits_limpio.parquet', 'DataSets_Clean\df_genres_limpio.parquet', 'DataSets_Clean\df_movies_limpio.parquet']:
     data_total = pq.read_table(archivo).to_pandas()
     dfs.append(data_total)
 
@@ -119,8 +119,8 @@ def votos_titulo(titulo_de_la_filmacion: str):
 
 # 5. Funcion para Obtener la Informacion de los Actores ____________________________________________________________________________________________________________________________________________
 
-credits = pd.read_parquet("DataSets/df_credits_limpio.parquet")
-movies = pd.read_parquet("DataSets/df_movies_limpio.parquet")
+credits = pd.read_parquet("DataSets_Clean\df_credits_limpio.parquet")
+movies = pd.read_parquet("DataSets_Clean\df_movies_limpio.parquet")
 
 # Limpiar la columna de actores
 credits["Actores"] = credits["Actores"].str.strip().str.lower()  # Eliminar espacios y convertir a minúsculas
@@ -161,8 +161,8 @@ def get_actor(nombre_actor: str):
 
 # 6. Funcion para Obtener Informacion de los Directores _____________________________________________________________________________________________________________________________________________________________
 
-credits = pd.read_parquet("DataSets/df_credits_limpio.parquet")
-movies = pd.read_parquet("DataSets/df_movies_limpio.parquet")
+credits = pd.read_parquet("DataSets_Clean\df_credits_limpio.parquet")
+movies = pd.read_parquet("DataSets_Clean\df_movies_limpio.parquet")
 
 # Limpiar la columna de directores
 credits['Diretores'] = credits['Diretores'].str.strip().str.lower()  # Eliminar espacios y convertir a minúsculas
