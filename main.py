@@ -9,7 +9,7 @@ from funciones import get_director
 
 
 
-#Crear una aplicacion con FastApi
+#Creacion de una aplicacion con FastApi
 
 app = FastAPI()
 
