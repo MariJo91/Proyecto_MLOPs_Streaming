@@ -56,9 +56,9 @@ Con el objetivo de poner el modelo de recomendación a disposición de los usuar
 
 ## - 6. Estructura del Repositorio
   
-Notebooks: Contiene los cuadernos de Jupyter / formato ipynb que documentan el proceso de ETL (Extracción, Transformación y Carga) y el análisis exploratorio de datos.
-images: Almacena los recursos visuales y complementarios utilizados en el proyecto.
-Dataset: Contiene Los datos después de aplicar las transformaciones necesarias.
+- Notebooks: Contiene los cuadernos de Jupyter / formato ipynb que documentan el proceso de ETL (Extracción, Transformación y Carga) y el análisis exploratorio de datos.
+- images: Almacena los recursos visuales y complementarios utilizados en el proyecto.
+- Dataset: Contiene Los datos después de aplicar las transformaciones necesarias.
 
 ### Mejoras para un Futuro Proyecto
 
