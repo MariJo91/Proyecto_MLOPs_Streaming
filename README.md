@@ -48,7 +48,7 @@ Modelo de Recomendación: Con el objetivo de proporcionar recomendaciones precis
 
 ## - 4. Implementación de MLOps
 
-Con el objetivo de poner el modelo de recomendación a disposición de los usuarios, se desplegó como una API en la plataforma Render. Esta elección permite una fácil implementación y escalabilidad del servicio. Para automatizar el proceso de despliegue, se configuró una integración continua con GitHub, lo que garantiza que los cambios en el código se reflejen rápidamente en la API. Enlace a la Api https://proyecto-mlops-movies.onrender.com/docs
+Con el objetivo de poner el modelo de recomendación a disposición de los usuarios, se desplegó como una API en la plataforma Render. Esta elección permite una fácil implementación y escalabilidad del servicio. Para automatizar el proceso de despliegue, se configuró una integración continua con GitHub, lo que garantiza que los cambios en el código se reflejen rápidamente en la API. Enlace a la Api https://proyecto-mlops-streaming.onrender.com/docs
 
 ## - 5. Video Explicativo
 
@@ -56,9 +56,9 @@ Con el objetivo de poner el modelo de recomendación a disposición de los usuar
 
 ## - 6. Estructura del Repositorio
   
-Notebooks: Contiene los cuadernos de Jupyter / formato ipynb que documentan el proceso de ETL (Extracción, Transformación y Carga) y el análisis exploratorio de datos.
-images: Almacena los recursos visuales y complementarios utilizados en el proyecto.
-Dataset: Contiene Los datos después de aplicar las transformaciones necesarias.
+- Notebooks: Contiene los cuadernos de Jupyter / formato ipynb que documentan el proceso de ETL (Extracción, Transformación y Carga) y el análisis exploratorio de datos.
+- images: Almacena los recursos visuales y complementarios utilizados en el proyecto.
+- Dataset: Contiene Los datos después de aplicar las transformaciones necesarias.
 
 ### Mejoras para un Futuro Proyecto
 
