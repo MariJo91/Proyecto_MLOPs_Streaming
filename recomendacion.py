@@ -18,9 +18,9 @@ class RecommendationResponse(BaseModel):
     movie_id: int
 
 # Cargamos los dataset necesarios
-creditos = pd.read_parquet('DataSets_Clean\df_credits_limpio.parquet')
-generos = pd.read_parquet('DataSets_Clean\df_genres_limpio.parquet')
-peliculas = pd.read_parquet('DataSets_Clean\df_movies_limpio.parquet')
+creditos = pd.read_parquet('DataSets_Clean/df_credits_limpio.parquet')
+generos = pd.read_parquet('DataSets_Clean/df_genres_limpio.parquet')
+peliculas = pd.read_parquet('DataSets_Clean/df_movies_limpio.parquet')
 
 # Renombrar columnas para la fusión
 creditos.rename(columns={'id': 'movie_id'}, inplace=True)
