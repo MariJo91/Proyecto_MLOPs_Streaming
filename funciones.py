@@ -196,3 +196,6 @@ def get_director(nombre_director: str):
     }
 
 
+
+
+

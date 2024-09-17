@@ -1,12 +1,12 @@
 from fastapi import FastAPI, HTTPException
-from typing import Optional
+from typing import List, Optional
 from funciones import cantidad_filmaciones_mes
 from funciones import cantidad_filmaciones_por_fecha_dia
 from funciones import score_titulo
 from funciones import votos_titulo
 from funciones import get_actor
 from funciones import get_director
-
+from recomendacion import recomendar_pelicula_por_genero, RecommendationResponse
 
 
 #Creacion de una aplicacion con FastApi
@@ -87,4 +87,9 @@ async def director_endpoint(nombre_director: str):
     return result
 
 
+# ______________________________________________ 7. Funcion para el Sistema de Recomendacion de Peliculas _____________________________________________________________________
 
+@app.get("/recommendations/", response_model=List[RecommendationResponse])
+async def get_recommendations(genre: str, n_recommendations: Optional[int] = 5):
+    recommendations = recomendar_pelicula_por_genero(genre, n_recommendations)
+    return recommendations
