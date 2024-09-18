@@ -89,7 +89,6 @@ async def director_endpoint(nombre_director: str):
 
 # ______________________________________________ 7. Funcion para el Sistema de Recomendacion de Peliculas _____________________________________________________________________
 
-@app.get("/recommendations/", response_model=List[RecommendationResponse])
-async def get_recommendations(genre: str, n_recommendations: Optional[int] = 5):
-    recommendations = recomendar_pelicula_por_genero(genre, n_recommendations)
-    return recommendations
+@app.get("/recomendar_pelicula", response_model=List[RecommendationResponse])
+def obtener_recomendaciones(genero: str, n_recomendaciones: int = 5):
+    return recomendar_pelicula_por_genero(genero, n_recomendaciones)
