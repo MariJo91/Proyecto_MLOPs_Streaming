@@ -1,7 +1,6 @@
 # Sistema de Recomendacion basado en Machine Learning
 
-
-### Implementacion del Modelo de Recomendacion, obtando por un filtrado basado en contenido. Este enfoque nos permitirá recomendar películas similares basadas en características como actores, directores y género.
+# Implementacion del Modelo de Recomendacion, obtando por un filtrado basado en contenido. Este enfoque nos permitirá recomendar películas similares basadas en características como actores, directores y género.
 
 # Preparamos el Entorno e Instalamos las Bibliotecas necesarias
 
